@@ -9,9 +9,9 @@ def normalize_tag_name(tag_name):
         return ''
     return tag_name.lower().replace(r'[^a-zA-Z0-9\s]', '')
 
-tags = pd.read_csv('/Users/siyaksares/Developer/GitHub/ReadersRadarProject/tags.csv')
-book_tags = pd.read_csv('/Users/siyaksares/Developer/GitHub/ReadersRadarProject/book_tags.csv')
-books = pd.read_csv('/Users/siyaksares/Developer/GitHub/ReadersRadarProject/books.csv')
+tags = pd.read_csv('/Users/siyaksares/Developer/GitHub/random-book-recommendation/tags.csv')
+book_tags = pd.read_csv('/Users/siyaksares/Developer/GitHub/random-book-recommendation/book_tags.csv')
+books = pd.read_csv('/Users/siyaksares/Developer/GitHub/random-book-recommendation/books.csv')
 
 tags['tag_name_normalized'] = tags['tag_name'].apply(normalize_tag_name)
 
