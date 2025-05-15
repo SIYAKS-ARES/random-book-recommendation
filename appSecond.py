@@ -62,3 +62,7 @@ def recommend():
 
 if __name__ == '__main__':
     app.run(debug=True, port=3000)
+
+
+'''Tag dışında daha fazla seçeneğe göre filtreleme ekle;
+such as year etc.'''
